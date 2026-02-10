@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Employee {
+  id          String   @id @default(uuid())
+  firstName   String
+  lastName    String
+  middleName  String?
+  designation String
+  department  String
+  branch       String
+
+  vehicles    Vehicle[]   // one employee can have vehicles
+}
+
+model Vehicle {
+  id              String   @id @default(uuid())
+  vehicleType     String   // car or motor
+  plateNumber     String   @unique
+  vin             String   @unique
+  engineNumber    String
+  yearModel       Int
+  makeModel       String
+  tplPolicyNumber String?
+  issuanceCategory String
+  moaDate          DateTime?
+
+  employeeId      String
+  employee        Employee @relation(fields: [employeeId], references: [id])
+
+  status           String   @default("PENDING")
+  createdAt        DateTime @default(now())
+}

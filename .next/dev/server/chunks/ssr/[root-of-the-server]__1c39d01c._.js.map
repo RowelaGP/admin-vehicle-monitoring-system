@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Rowela/Documents/GitHub/admin-vehicle-monitoring-system/src/app/enroll-vehicle/page.tsx"],"sourcesContent":["export default function EnrollVehicle() {\r\n  return (\r\n    <div className=\"flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-black\">\r\n      <main className=\"flex flex-col items-center justify-center gap-8 py-32 px-16\">\r\n        <h1 className=\"text-4xl font-semibold text-black dark:text-zinc-50\">\r\n          Enroll Vehicle\r\n        </h1>\r\n        <p className=\"text-lg text-zinc-600 dark:text-zinc-400\">\r\n          Vehicle enrollment form coming soon...\r\n        </p>\r\n      </main>\r\n    </div>\r\n  );\r\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAK,WAAU;;8BACd,8OAAC;oBAAG,WAAU;8BAAsD;;;;;;8BAGpE,8OAAC;oBAAE,WAAU;8BAA2C;;;;;;;;;;;;;;;;;AAMhE"}}]
+}
