@@ -10,12 +10,12 @@ export default function AdminDashboard() {
       {/* Header */}
       <div className="w-full flex items-center justify-between px-6 py-3 border-b bg-white">
         <div className="flex items-center gap-3">
-          <img src="/gpi-logo.svg" alt="Gakken Philippines Inc. logo" className="w-10 h-10" />
-          <div className="font-bold text-green-900">GAKKEN PHILIPPINES INC.</div>
+          <img src="/GPI Logo Horizontal Black.png" alt="Gakken Philippines Inc. logo" className="w-10 h-10" />
+          <div className="font-bold text-[#005652]">GAKKEN PHILIPPINES INC.</div>
         </div>
         <button
           onClick={() => router.push("/")}
-          className="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700"
+          className="px-4 py-2 bg-[#00877F] text-white rounded-lg hover:bg-[#005652]"
         >
           Back to Home
         </button>

@@ -10,18 +10,13 @@ export default function Home() {
       {/* Header */}
       <div className="w-full flex items-center px-6 py-3 border-b bg-white">
         <div className="flex items-center gap-3">
-          <img src="/gpi-logo.svg" alt="Gakken Philippines Inc. logo" className="w-10 h-10" />
-          <div className="font-bold text-green-900">GAKKEN PHILIPPINES INC.</div>
+          <img src="/GPI Logo Horizontal Black.png" alt="Gakken Philippines Inc. logo" className="h-12" />
         </div>
       </div>
 
       {/* Banner */}
-      <div className="w-full bg-green-900 text-white py-16 flex flex-col items-center">
-        <h1 className="text-6xl font-bold">30</h1>
-        <p className="italic text-2xl">years</p>
-        <p className="mt-2 text-sm">
-          Your Trusted Partner in Printing, Business Innovation and Solution for Over 30 Years
-        </p>
+      <div className="w-full bg-[#005652] px-6 py-6 flex flex-col items-center justify-center">
+        <img src="/30 Years logo_Official Tagline.png" alt="30 Years Anniversary Logo" className="h-48" />
       </div>
 
       {/* Main Content */}
@@ -35,14 +30,14 @@ export default function Home() {
         <div className="flex gap-4 justify-center mt-4">
           <button
             onClick={() => router.push("/enroll-vehicle")}
-            className="px-6 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700"
+            className="px-6 py-2 bg-[#00877F] text-white rounded-lg hover:bg-[#005652]"
           >
             Employee
           </button>
 
           <button
             onClick={() => router.push("/admin-dashboard")}
-            className="px-6 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700"
+            className="px-6 py-2 bg-[#00877F] text-white rounded-lg hover:bg-[#005652]"
           >
             Admin
           </button>
